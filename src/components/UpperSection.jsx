@@ -201,56 +201,6 @@ const UpperSection = () => {
               </motion.p>
 
               {/* Social Links */}
-              <motion.div
-                variants={fadeInUp}
-                className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8"
-              >
-                {[
-                  {
-                    icon: FaGithub,
-                    href: "https://github.com/davincode2",
-                    label: "Portfolio",
-                  },
-                  {
-                    icon: FaLinkedin,
-                    href: "https://linkedin.com/in/david-vincent-56129261",
-                    label: "LinkedIn",
-                  },
-                  {
-                    icon: FaEnvelope,
-                    href: "mailto:david.vint3249@gmail.com",
-                    label: "Email",
-                  },
-                ].map(({ icon: Icon, href, label }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    className={`p-3 rounded-full transition-all duration-200 hover:scale-105 ${darkMode
-                      ? "bg-gray-800 text-gray-300 hover:bg-blue-600 hover:text-white"
-                      : "bg-white text-gray-600 hover:bg-blue-600 hover:text-white shadow-md"
-                      }`}
-                    aria-label={label}
-                  >
-                    <Icon size={20} />
-                  </a>
-                ))}
-
-                {/* Resume */}
-                {/*                 <a
-                  href={resume}
-                  download="David_Vincent_Resume.pdf"
-                  className={`flex items-center gap-2 px-4 py-3 rounded-full transition-all duration-200 hover:scale-105 ${
-                    darkMode
-                      ? "bg-gray-800 text-gray-300 hover:bg-gradient-to-r hover:from-[#2c3e50] hover:to-[#4ca1af] hover:text-white border border-gray-700"
-                      : "bg-white text-gray-700 hover:bg-gradient-to-r hover:from-[#2c3e50] hover:to-[#4ca1af] hover:text-white shadow-md"
-                  }`}
-                >
-                  <FaFileAlt size={16} />
-                  <span className="font-medium text-sm">Resume</span>
-                  <FaDownload size={12} />
-                </a> */}
-
-              </motion.div>
 
               {/* CTA Buttons */}
               <motion.div
@@ -276,8 +226,8 @@ const UpperSection = () => {
             </div>
           </div>
         </motion.div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 
